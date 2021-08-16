@@ -25,12 +25,14 @@ class Homepage extends StatelessWidget {
         children: [
           Container(
             height: 315.0,
-            color: Colors.blue,
+            color: Colors.white,
           ),
           Padding(padding: EdgeInsets.only(top: 4.05)),
-          Expanded(
-            flex: 2,
-            child: ButtonGroup(),
+          Center(
+            child: Expanded(
+              flex: 2,
+              child: ButtonGroup(),
+            ),
           )
         ],
       ),
