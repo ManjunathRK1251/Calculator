@@ -23,11 +23,11 @@ class _ButtonState extends State<Button> {
   Widget build(BuildContext context) {
     return Container(
       width: 70.0,
-      height: 70.0,
-      child: FloatingActionButton(
+      height: 65.0,
+      child: FloatingActionButton.extended(
           elevation: 10.0,
           onPressed: () {},
-          child: Text(
+          label: Text(
             '$text',
             style: TextStyle(fontSize: 23.0),
           )),

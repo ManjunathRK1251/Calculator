@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'Buttons.dart';
 import 'ButtonLayout.dart';
 
 void main() {
@@ -24,11 +23,13 @@ class Homepage extends StatelessWidget {
     return SafeArea(
       child: Column(
         children: [
-          Expanded(
-            child: Text('Result Area'),
+          Container(
+            height: 315.0,
+            color: Colors.blue,
           ),
+          Padding(padding: EdgeInsets.only(top: 4.05)),
           Expanded(
-            flex: 4,
+            flex: 2,
             child: ButtonGroup(),
           )
         ],

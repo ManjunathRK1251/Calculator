@@ -13,58 +13,27 @@ class ButtonGroup extends StatelessWidget {
         ),
         Column(
           children: [
-            Button('a'),
+            Button('AC'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('a'),
+            Button('sqrt'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('a'),
+            Button('7'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('a'),
+            Button('4'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('a'),
+            Button('1'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('a'),
-            Padding(
-              padding: EdgeInsets.all(10.0),
-            ),
-          ],
-        ),
-        Padding(
-          padding: EdgeInsets.all(10.0),
-        ),
-        Column(
-          children: [
-            Button('b'),
-            Padding(
-              padding: EdgeInsets.all(10.0),
-            ),
-            Button('b'),
-            Padding(
-              padding: EdgeInsets.all(10.0),
-            ),
-            Button('b'),
-            Padding(
-              padding: EdgeInsets.all(10.0),
-            ),
-            Button('b'),
-            Padding(
-              padding: EdgeInsets.all(10.0),
-            ),
-            Button('b'),
-            Padding(
-              padding: EdgeInsets.all(10.0),
-            ),
-            Button('b'),
+            Button('.'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
@@ -75,27 +44,27 @@ class ButtonGroup extends StatelessWidget {
         ),
         Column(
           children: [
-            Button('c'),
+            Button('('),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('c'),
+            Button('%'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('c'),
+            Button('8'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('c'),
+            Button('5'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('c'),
+            Button('2'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('c'),
+            Button('0'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
@@ -106,24 +75,55 @@ class ButtonGroup extends StatelessWidget {
         ),
         Column(
           children: [
-            Button('d'),
+            Button(')'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('d'),
+            Button('+/-'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('d'),
+            Button('9'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
-            Button('d'),
+            Button('6'),
+            Padding(
+              padding: EdgeInsets.all(10.0),
+            ),
+            Button('3'),
+            Padding(
+              padding: EdgeInsets.all(10.0),
+            ),
+            Button('C'),
+            Padding(
+              padding: EdgeInsets.all(10.0),
+            ),
+          ],
+        ),
+        Padding(
+          padding: EdgeInsets.all(10.0),
+        ),
+        Column(
+          children: [
+            Button('*'),
+            Padding(
+              padding: EdgeInsets.all(10.0),
+            ),
+            Button('/'),
+            Padding(
+              padding: EdgeInsets.all(10.0),
+            ),
+            Button('-'),
+            Padding(
+              padding: EdgeInsets.all(10.0),
+            ),
+            Button('+'),
             Padding(
               padding: EdgeInsets.all(10.0),
             ),
             Container(
-              height: 160.0,
+              height: 150.0,
               child: ElevatedButton(
                 onPressed: () {},
                 child: Text('='),
