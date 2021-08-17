@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'globals.dart';
 
 // ignore: must_be_immutable
 class Button extends StatefulWidget {
@@ -19,6 +20,17 @@ class Button extends StatefulWidget {
       _ButtonState(text, textColor, buttonColor, buttonHeight);
 }
 
+Widget result(String text) {
+  return Text(
+    text,
+    style: TextStyle(fontSize: 75.0),
+  );
+}
+
+Widget history(String text) {
+  return Text(text);
+}
+
 class _ButtonState extends State<Button> {
   late String text;
   late Color textColor;
@@ -37,6 +49,15 @@ class _ButtonState extends State<Button> {
     this.buttonHeight = buttonHeight;
   }
 
+  void numClick(String text) {
+    setState(() {
+      expression += text;
+      //result(expression);
+      Text(expression);
+      print(expression);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -49,7 +70,9 @@ class _ButtonState extends State<Button> {
             backgroundColor: buttonColor,
             highlightElevation: 20.0,
             elevation: 4.0,
-            onPressed: () {},
+            onPressed: () {
+              numClick(text);
+            },
             label: Text(
               '$text',
               style: TextStyle(

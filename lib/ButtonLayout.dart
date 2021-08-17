@@ -86,7 +86,7 @@ class ButtonGroup extends StatelessWidget {
             for (String text in col4)
               buildButtons.buildButton(text, Colors.purple.shade100),
             Padding(
-              padding: EdgeInsets.all(5.0),
+              padding: EdgeInsets.all(0.0),
             ),
             buildButtons.buildButton(
                 '=', Color(0xff9b2cf0), Colors.white, 160.0),
