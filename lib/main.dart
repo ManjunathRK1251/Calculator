@@ -28,7 +28,7 @@ class Homepage extends StatelessWidget {
             //Result area
             height: 275.0,
             color: Colors.white,
-            child: Center(child: Text('Result')),
+            //child: Center(child: Text('Result')),
           ),
           Padding(padding: EdgeInsets.only(top: 4.05)),
           Center(
