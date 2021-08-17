@@ -1,4 +1,5 @@
-# calculator
+<h1>Calculator</h1>
+<h5>Calculator with Minimal and Beautiful UI built using Flutter</h5>
 
 A new Flutter project.
 
@@ -14,3 +15,8 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+<h4>TODO</h4>
+Add Functionality
+<br>
+Add Dark mode
