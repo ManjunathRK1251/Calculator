@@ -1,4 +1,5 @@
-# Calculator with Minimal and Beautiful UI built using Flutter
+<h1>Calculator</h1>
+<h5>Calculator with Minimal and Beautiful UI built using Flutter</h5>
 
 A new Flutter project.
 
