@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Buttons.dart';
-import 'package:quiver/iterables.dart';
 
 // ignore: must_be_immutable
 class BuildButtons extends StatelessWidget {
@@ -15,16 +14,17 @@ class BuildButtons extends StatelessWidget {
     String text, [
     Color buttonColor = Colors.white,
     Color textColor = Colors.black87,
+    double buttonHeight = 70.0,
   ]) {
-    return Button(text, textColor, buttonColor);
+    return Button(text, textColor, buttonColor, buttonHeight);
   }
 
-  List buttonsList(List<String> buttonTexts, List buttonColors) {
-    var zipped = zip([buttonTexts, buttonColors]).toList();
-    for (var pair in zipped) {
-      buttons.add(buildButton(pair[0].toString(), pair[1]));
+  /*List buttonsList(final buttonAttributes) {
+    var keys = buttonAttributes.keys.toList();
+    for (var key in keys) {
+      buttons.add(buildButton(key, buttonAttributes[key]));
     }
     //USE DICTONARY INSTEAD
     return buttons;
-  }
+  }*/
 }

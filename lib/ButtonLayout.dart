@@ -4,28 +4,57 @@ import 'BuildButtons.dart';
 class ButtonGroup extends StatelessWidget {
   final BuildButtons buildButtons = BuildButtons();
 
-  List<String> col1 = ['AC', 'sqrt', '7', '4', '1', '.'];
-  List<String> col2 = ['(', '%', '8', '5', '2', '0'];
-  List<String> col3 = [')', '+/-', '9', '6', '3', 'C'];
-  List<String> col4 = ['*', '/', '-', '+'];
+  var col1 = {
+    'AC': Colors.yellow.shade700,
+    'sqrt': Colors.yellow.shade50,
+    '7': Colors.white,
+    '4': Colors.white,
+    '1': Colors.white,
+    '.': Colors.white,
+  };
 
-  var column1 = [
-    Colors.yellow.shade700,
-    Colors.yellow.shade100,
-    Colors.white,
-    Colors.white,
-    Colors.white,
-    Colors.white,
+  var col2 = {
+    '(': Colors.yellow.shade50,
+    '%': Colors.yellow.shade50,
+    '8': Colors.white,
+    '5': Colors.white,
+    '2': Colors.white,
+    '0': Colors.white,
+  };
+
+  var col3 = {
+    ')': Colors.yellow.shade50,
+    '+/-': Colors.yellow.shade50,
+    '9': Colors.white,
+    '6': Colors.white,
+    '3': Colors.white,
+    'C': Colors.white,
+  };
+
+  List<String> col4 = [
+    '*',
+    '/',
+    '-',
+    '+',
   ];
 
-  List<Color> others = [
-    Colors.yellow.shade100,
-    Colors.yellow.shade100,
-    Colors.white,
-    Colors.white,
-    Colors.white,
-    Colors.white,
-  ];
+  List<Widget> buttonGroup(
+    final buttonAttributes,
+  ) {
+    List<Widget> buttons = [];
+    var keys = buttonAttributes.keys.toList();
+    for (var key in keys) {
+      if (buttonAttributes[key] == Colors.yellow.shade700) {
+        buttons.add(
+            buildButtons.buildButton(key, buttonAttributes[key], Colors.white));
+      } else if (buttonAttributes[key] == Colors.yellow.shade50)
+        buttons.add(buildButtons.buildButton(
+            key, buttonAttributes[key], Color(0xffa9915f)));
+      else
+        buttons.add(buildButtons.buildButton(key, buttonAttributes[key]));
+    }
+    return buttons;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,25 +64,19 @@ class ButtonGroup extends StatelessWidget {
           padding: EdgeInsets.all(10.0),
         ),
         Column(
-          children: [
-            for (String text in col1) buildButtons.buildButton(text),
-          ],
+          children: buttonGroup(col1),
         ),
         Padding(
           padding: EdgeInsets.all(10.0),
         ),
         Column(
-          children: [
-            for (String text in col2) buildButtons.buildButton(text),
-          ],
+          children: buttonGroup(col2),
         ),
         Padding(
           padding: EdgeInsets.all(10.0),
         ),
         Column(
-          children: [
-            for (String text in col3) buildButtons.buildButton(text),
-          ],
+          children: buttonGroup(col3),
         ),
         Padding(
           padding: EdgeInsets.all(10.0),
@@ -63,23 +86,15 @@ class ButtonGroup extends StatelessWidget {
             for (String text in col4)
               buildButtons.buildButton(text, Colors.purple.shade100),
             Padding(
-              padding: EdgeInsets.all(10.0),
+              padding: EdgeInsets.all(5.0),
             ),
-            Container(
-              height: 150.0,
-              width: 70.0,
-              child: FloatingActionButton.extended(
-                  elevation: 1000.0,
-                  backgroundColor: Color(0xff9b2cf0),
-                  onPressed: () {},
-                  label: Text(
-                    '=',
-                    style: TextStyle(fontSize: 23.0),
-                  )),
-            ),
+            buildButtons.buildButton(
+                '=', Color(0xff9b2cf0), Colors.white, 160.0),
           ],
         ),
       ],
     );
   }
 }
+
+/*  */

@@ -9,6 +9,7 @@ class Calculator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.white,
         body: Homepage(),
@@ -24,8 +25,10 @@ class Homepage extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 315.0,
+            //Result area
+            height: 275.0,
             color: Colors.white,
+            child: Center(child: Text('Result')),
           ),
           Padding(padding: EdgeInsets.only(top: 4.05)),
           Center(
