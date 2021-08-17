@@ -1,4 +1,4 @@
-# calculator
+# Calculator with Minimal and Beautiful UI built using Flutter
 
 A new Flutter project.
 
