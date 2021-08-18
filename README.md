@@ -1,7 +1,7 @@
 <h1>Calculator</h1>
-<h5>Calculator with Minimal and Beautiful UI built using Flutter</h5>
+<h4>Calculator with Minimal and Beautiful UI built using Flutter</h4>
 
-A new Flutter project.
+<img src = "Screenshots/qemu-system-x86_64_z6VwJNbgKd.png" width = 200 height = 400>
 
 ## Getting Started
 
