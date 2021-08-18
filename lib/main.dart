@@ -34,7 +34,7 @@ class _HomepageState extends State<Homepage> {
           Container(
             alignment: Alignment.bottomRight,
             //Result area
-            height: 275.0,
+            height: 215.0,
             color: Colors.white,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
